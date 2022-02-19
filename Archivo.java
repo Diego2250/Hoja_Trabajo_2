@@ -8,7 +8,6 @@ Modelo de archivo para uso del Controlador.
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-import java.io.IOException;
 public class Archivo{
 /*Constructor de clase*/
   public Archivo(){
