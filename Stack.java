@@ -1,5 +1,5 @@
 /**
- * @author MDiego Morales
+ * @author Diego Morales
  *
  */
 public class Stack<E> implements IStack<E> {
@@ -12,9 +12,10 @@ public class Stack<E> implements IStack<E> {
 		top = null;
 	}
 	
-	/***
-	 * Hace un push de un valor dentro de un node
-	 */
+    /**
+     * 
+     * @param value
+     */
 	public void push(E value) {
 		nodo<E> newNode = new nodo<E>(value);
 		
@@ -27,10 +28,10 @@ public class Stack<E> implements IStack<E> {
 		size++;
 	}
 
-	/***
-	 * Hace un pull quitando un valor de la pila 
-	 * @return el valor que fue retirado
-	 */
+	/**
+     * 
+     * @return saca el elemento del estack
+     */
 	public E pull() {
 		
 		if (size() == 0) {
@@ -49,10 +50,10 @@ public class Stack<E> implements IStack<E> {
 		
 	}
 
-	/***
-	 * Muestra un valor de la pila 
-	 * @return valor escogido
-	 */
+	/**
+     * 
+     * @return primer valor
+     */
 	public E peek() {
 		if (empty()) {
 			return null;
@@ -61,18 +62,18 @@ public class Stack<E> implements IStack<E> {
 		}
 	}
 
-	/***
-	 * muestra cuantos valores hay en la pila
-	 * @return cantidad de valores
-	 */
+    /**
+     * 
+     * @return tamaño de stack
+     */
 	public int size() {
 		return size;
 	}
 
-	/***
-	 * muestra si la pila se encuntra vacia 
-	 * @return boolean del estado de la pila
-	 */
+    /**
+     * 
+     * @return primer elemento null
+     */
 	public boolean empty() {
 		return (top == null);
 	}

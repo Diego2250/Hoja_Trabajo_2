@@ -1,6 +1,17 @@
+    /**
+    * @author Diego Morales
+    */
     class CalculadoraPosfix implements IPosfixCalc{
+        
         Stack<Integer> Stack = new Stack<Integer>();
+        
         public int resultado;
+        
+        /**
+         * 
+         * @param expresion
+         * @return resultado
+         */
         @Override
         public int Evaluate(String expresion) {
             String data = expresion;
