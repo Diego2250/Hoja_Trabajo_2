@@ -6,7 +6,6 @@ public class Stack<E> implements IStack<E> {
 	
 	private nodo<E> top;
 	private int size;
-	public E tempo;
 	
 	public Stack() {
 		top = null;

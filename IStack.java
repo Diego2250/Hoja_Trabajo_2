@@ -20,10 +20,7 @@ public interface IStack<E>
    // pre: stack is not empty
    // post: top value (next to be popped) is returned
    
-   /**
-	* 
-	* @return Si esta vacío o no
-    */
+ 
    public boolean empty();
 
    
